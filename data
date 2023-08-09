@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Toyota Corolla",
+    "price": "$23,000",
+    "location": "California, USA",
+    "wheelDrive": "Front-wheel drive",
+    "fuelType": "Petrol",
+    "numberOfSeats": 5,
+    "rating": 4,
+    "reviews": 120,
+    "yearLaunched": 2019,
+    "isFeatured": false
+  },
+  {
+    "name": "Honda Civic",
+    "price": "$22,500",
+    "location": "Tokyo, Japan",
+    "wheelDrive": "Front-wheel drive",
+    "fuelType": "Petrol",
+    "numberOfSeats": 5,
+    "rating": 5,
+    "reviews": 150,
+    "yearLaunched": 2020,
+    "isFeatured": true
+  },
+  {
+    "name": "Ford Mustang",
+    "price": "$35,000",
+    "location": "Michigan, USA",
+    "wheelDrive": "Rear-wheel drive",
+    "fuelType": "Petrol",
+    "numberOfSeats": 4,
+    "rating": 4,
+    "reviews": 90,
+    "yearLaunched": 2018,
+    "isFeatured": false
+  },
+  {
+    "name": "Chevrolet Camaro",
+    "price": "$30,500",
+    "location": "Detroit, USA",
+    "wheelDrive": "Rear-wheel drive",
+    "fuelType": "Petrol",
+    "numberOfSeats": 4,
+    "rating": 4,
+    "reviews": 95,
+    "yearLaunched": 2019,
+    "isFeatured": true
+  },
+  {
+    "name": "Nissan Altima",
+    "price": "$24,800",
+    "location": "Yokohama, Japan",
+    "wheelDrive": "Front-wheel drive",
+    "fuelType": "Petrol",
+    "numberOfSeats": 5,
+    "rating": 4,
+    "reviews": 110,
+    "yearLaunched": 2020,
+    "isFeatured": false
+  },
+  {
+    "name": "Mazda3",
+    "price": "$26,200",
+    "location": "Hiroshima, Japan",
+    "wheelDrive": "Front-wheel drive",
+    "fuelType": "Petrol",
+    "numberOfSeats": 5,
+    "rating": 4,
+    "reviews": 100,
+    "yearLaunched": 2021,
+    "isFeatured": true
+  },
+  {
+    "name": "Volkswagen Golf",
+    "price": "$27,500",
+    "location": "Wolfsburg, Germany",
+    "wheelDrive": "Front-wheel drive",
+    "fuelType": "Petrol",
+    "numberOfSeats": 5,
+    "rating": 4,
+    "reviews": 105,
+    "yearLaunched": 2020,
+    "isFeatured": true
+  },
+  {
+    "name": "BMW 3 Series",
+    "price": "$40,000",
+    "location": "Munich, Germany",
+    "wheelDrive": "Rear-wheel drive",
+    "fuelType": "Petrol",
+    "numberOfSeats": 5,
+    "rating": 5,
+    "reviews": 160,
+    "yearLaunched": 2019,
+    "isFeatured": false
+  },
+  {
+    "name": "Mercedes-Benz C-Class",
+    "price": "$42,500",
+    "location": "Stuttgart, Germany",
+    "wheelDrive": "Rear-wheel drive",
+    "fuelType": "Petrol",
+    "numberOfSeats": 5,
+    "rating": 5,
+    "reviews": 170,
+    "yearLaunched": 2020,
+    "isFeatured": true
+  },
+  {
+    "name": "Audi A4",
+    "price": "$38,000",
+    "location": "Ingolstadt, Germany",
+    "wheelDrive": "Front-wheel drive",
+    "fuelType": "Petrol",
+    "numberOfSeats": 5,
+    "rating": 4,
+    "reviews": 130,
+    "yearLaunched": 2021,
+    "isFeatured": false
+  }
+]
