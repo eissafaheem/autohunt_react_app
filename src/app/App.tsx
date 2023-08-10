@@ -1,11 +1,13 @@
 import React from 'react';
 import logo from './../logo.svg';
 import './App.css';
+import AppRouter from './App.routing';
 
 function App() {
   return (
     <div className="App">
-      Hii
+      App TSX 
+      <AppRouter/>
     </div>
   );
 }
