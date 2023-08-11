@@ -3,7 +3,7 @@ import HomeComponent from "./home/Home.component";
 
 import React from 'react'
 import LayoutComponent from "./layout/Layout.component";
-import InputFieldComponent from "./shared/components/InputField.component";
+import InputFieldComponent from "./shared/components/input-field/InputField.component";
 
 function AppRouter() {
     const router = createBrowserRouter([

@@ -1,0 +1,31 @@
+.nav-main-container{
+    height: 3.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+}
+
+.routing-options,
+.user-options{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.routing-options > .option{
+    margin: 0 4rem;
+}
+
+.user-options > .option{
+    display: flex;
+    align-items: center;
+    gap: 1ch;
+    margin: 0 2rem;
+}
+.user-options > .option > img{
+    height: 1rem;
+}
