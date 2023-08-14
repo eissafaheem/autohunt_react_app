@@ -7,7 +7,6 @@ import NavbarComponent from './layout/navbar/Navbar.component';
 function App() {
   return (
     <div className="App">
-      <NavbarComponent/>
       <AppRouter/>
     </div>
   );

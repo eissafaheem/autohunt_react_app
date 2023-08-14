@@ -4,20 +4,38 @@ import HomeComponent from "./home/Home.component";
 import React from 'react'
 import LayoutComponent from "./layout/Layout.component";
 import InputFieldComponent from "./_shared/components/input-field/InputField.component";
+import LandingPageComponent from "./home/landing-page/LandingPage.component";
+import FilterComponent from "./home/filter/Filter.component";
+import InfoComponent from "./home/info/Info.component";
+import SellComponent from "./home/sell/Sell.component";
+import CompareComponent from "./home/compare/Compare.component";
+import { ROUTES } from "./_shared/utils/Routes";
 
 function AppRouter() {
     const router = createBrowserRouter([
         {
             path: '/',
-            element: <HomeComponent />,
+            element: <LayoutComponent/>,
             children: [
                 {
-                    path: '/layout',
-                    element: <LayoutComponent />
+                    path: `${ROUTES.landing_page}`,
+                    element: <LandingPageComponent/>
                 },
                 {
-                    path: '/input',
-                    element: <InputFieldComponent/>
+                    path: `${ROUTES.filter}`,
+                    element: <FilterComponent/>
+                },
+                {
+                    path: `${ROUTES.info}`,
+                    element: <InfoComponent/>
+                },
+                {
+                    path: `${ROUTES.sell}`,
+                    element: <SellComponent/>
+                },
+                {
+                    path: `${ROUTES.compare}`,
+                    element: <CompareComponent/>
                 }
             ]
         }
