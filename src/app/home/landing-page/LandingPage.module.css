@@ -1,6 +1,8 @@
-.main-container{
+.main-container {}
+
+.welcome {
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
     background-image: url('../../assets/svgs/home-backgrounf.svg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,20 +12,24 @@
     color: white;
 }
 
-.tagline{
+.tagline {
     position: absolute;
     top: 12rem;
     left: 10rem;
 }
 
 .tagline,
-h1{
+h1 {
     margin-bottom: 1rem;
     font-size: 3rem;
     font-weight: 100;
 }
 
-.tagline
-p{
+.tagline p {
     font-size: 1.5rem;
+}
+
+.recomended {
+    height: 100vh;
+    background-color: #0B0C10;
 }
