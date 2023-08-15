@@ -54,31 +54,36 @@ function CardComponent(props: CardComponentProps) {
                 </div>
             </div>
             <div className={CardStyles["content"]}>
-                <h3>{name}</h3>
+                <div className={CardStyles['title']}>
+                    {name}
+                </div>
                 <h2 className={CardStyles["price"]}>{price}</h2>
                 <p>{location}</p>
                 <div className={CardStyles["other-info"]}>
                     <table>
-                        <tr>
-                            <td>
-                                <img src={calenderIcon} alt="Calender Icon" />
-                                {year}
-                            </td>
-                            <td>
-                                <img src={steeringIcon} alt="Steering Icon" />
-                                {wheelDrive}
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src={fuelIcon} alt="Fuel Icon" />
-                                {fueltype}
-                            </td>
-                            <td>
-                                <img src={peopleIcon} alt="People Icon" />
-                                {numberOfSeats}
-                            </td>
-                        </tr>
+                        <thead></thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src={calenderIcon} alt="Calender Icon" />
+                                    {year}
+                                </td>
+                                <td>
+                                    <img src={steeringIcon} alt="Steering Icon" />
+                                    {wheelDrive}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src={fuelIcon} alt="Fuel Icon" />
+                                    {fueltype}
+                                </td>
+                                <td>
+                                    <img src={peopleIcon} alt="People Icon" />
+                                    {numberOfSeats}
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>

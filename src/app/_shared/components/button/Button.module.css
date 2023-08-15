@@ -1,0 +1,22 @@
+.btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    color: var(--text1_color);
+    border-radius: var(--border_radius);
+    cursor: pointer;
+}
+
+.btn:hover{
+    box-shadow: 1px 1px 5px var(--text1_color);
+}
+
+.secondary{
+    background-color: transparent;
+    border: var(--border_width) solid var(--text1_color);
+}
+
+.primary{
+    background-color: var(--text2_color);
+    border: var(--border_width) solid var(--text2_color);
+}

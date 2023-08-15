@@ -1,7 +1,7 @@
 .main-container {
     background-color: #0A0D10;
     color: white;
-    border: 0.25rem solid #12232E;
+    border: var(--border_width) solid var(--bg3_color);
     position: relative;
     padding: 1rem;
     border-radius: 3px;
@@ -28,6 +28,12 @@
 
 .content>* {
     margin: 0.5rem 0;
+    font-size: 0.8rem;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 .price {
