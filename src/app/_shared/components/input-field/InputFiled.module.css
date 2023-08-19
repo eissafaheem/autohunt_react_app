@@ -1,20 +1,17 @@
-.main-container{
+.main-container {
+    background-color: var(--bg3_color);
     display: flex;
-    align-items: center;
-    gap: 1ch;
-    background-color: red;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border_radius);
 }
 
-.main-container>img{
-    height: 1rem;
-    top: 0;
-    left: 0;
-}
+.icon {}
 
-input{
+input {
+    background-color: var(--bg3_color);
     outline: none;
-    border: none;
-    background-color: yellow;
-    padding: 0.25rem 1rem;
-    width: calc(100% - 1ch - 1rem);
+    width: 100%;
+    color: var(--text1_color);
+    font-size: 1rem;
 }

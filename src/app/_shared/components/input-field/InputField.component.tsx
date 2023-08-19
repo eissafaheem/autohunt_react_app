@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import inputFiledStyles from './InputFiled.module.css'
+import InputFiledStyles from './InputFiled.module.css'
 
 type InputFiledProps = {
   placeholder: string,
-  icon: string,
+  icon?: string,
   setValue: React.Dispatch<React.SetStateAction<string>>
 }
 
@@ -21,8 +21,8 @@ function InputFieldComponent(props: InputFiledProps) {
   }
   
   return (
-    <div className={inputFiledStyles['main-container']}>
-      <div className="icon">
+    <div className={InputFiledStyles['main-container']}>
+      <div className={InputFiledStyles["icon"]}>
         <img src={icon} alt="" />
       </div>
       <input type="text" placeholder={placeholder} onChange={(event) => { handleChange(event) }} />
