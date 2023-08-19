@@ -11,6 +11,12 @@ import newCarIcon from './../../assets/svgs/new-car-icon.svg'
 import usedCarIcon from './../../assets/svgs/used-car-icon.svg'
 import sellCarIcon from './../../assets/svgs/sell-car-icon.svg'
 import omar from './../../assets/svgs/persons/omar.svg'
+import audi from './../../assets/svgs/car-logo/audi.svg'
+import fiat from './../../assets/svgs/car-logo/fiat.svg'
+import peugeot from './../../assets/svgs/car-logo/peugeot.svg'
+import tesla from './../../assets/svgs/car-logo/tesla.svg'
+import volvo from './../../assets/svgs/car-logo/volvo.svg'
+import hyundai from './../../assets/svgs/car-logo/hyundai.svg'
 import InputFieldComponent from '../../_shared/components/input-field/InputField.component'
 
 function LandingPageComponent() {
@@ -133,28 +139,111 @@ function LandingPageComponent() {
               <p>Sell my car</p>
             </div>
           </div>
-          <h2>Testimonials</h2>
+          <h2 className={LandingPageStyles['testimonial-heading']}>Testimonials</h2>
         </div>
         <div className={LandingPageStyles["testimonials"]}>
           <div className={LandingPageStyles["testimonial-container"]}>
             <div className={LandingPageStyles["testimonial-card"]}>
-              <div className={LandingPageStyles["triangle"]}>
-
-              </div>
-              <div className={LandingPageStyles["card-content"]}>
+              <div className={LandingPageStyles["triangle"]} />
+              <div className={LandingPageStyles["card-body"]}>
                 <img src={omar} alt="" />
-                <div className="user">
+                <div className={LandingPageStyles["content"]}>
                   <h4>Omar Mango</h4>
+                  <h4>Customer</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odit eos iusto. Non a, sit quisquam ab temporibus minima accusantium?
+                  </p>
                 </div>
               </div>
             </div>
-            <div className={LandingPageStyles["testimonial-card"]}>1</div>
-            <div className={LandingPageStyles["testimonial-card"]}>1</div>
-            <div className={LandingPageStyles["testimonial-card"]}>1</div>
-            <div className={LandingPageStyles["testimonial-card"]}>1</div>
+            <div className={LandingPageStyles["testimonial-card"]}>
+              <div className={LandingPageStyles["triangle"]} />
+              <div className={LandingPageStyles["card-body"]}>
+                <img src={omar} alt="" />
+                <div className={LandingPageStyles["content"]}>
+                  <h4>Omar Mango</h4>
+                  <h4>Customer</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odit eos iusto. Non a, sit quisquam ab temporibus minima accusantium?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className={LandingPageStyles["testimonial-card"]}>
+              <div className={LandingPageStyles["triangle"]} />
+              <div className={LandingPageStyles["card-body"]}>
+                <img src={omar} alt="" />
+                <div className={LandingPageStyles["content"]}>
+                  <h4>Omar Mango</h4>
+                  <h4>Customer</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odit eos iusto. Non a, sit quisquam ab temporibus minima accusantium?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className={LandingPageStyles["testimonial-card"]}>
+              <div className={LandingPageStyles["triangle"]} />
+              <div className={LandingPageStyles["card-body"]}>
+                <img src={omar} alt="" />
+                <div className={LandingPageStyles["content"]}>
+                  <h4>Omar Mango</h4>
+                  <h4>Customer</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odit eos iusto. Non a, sit quisquam ab temporibus minima accusantium?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className={LandingPageStyles["testimonial-card"]}>
+              <div className={LandingPageStyles["triangle"]} />
+              <div className={LandingPageStyles["card-body"]}>
+                <img src={omar} alt="" />
+                <div className={LandingPageStyles["content"]}>
+                  <h4>Omar Mango</h4>
+                  <h4>Customer</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odit eos iusto. Non a, sit quisquam ab temporibus minima accusantium?
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+      <section className={LandingPageStyles['contact']}>
+        <div className={LandingPageStyles["contact-map"]}>
+          k
+        </div>
+        <div className={LandingPageStyles["contact-container"]}>
+          <h2>Contact</h2>
+          <br />
+          <div className={LandingPageStyles["form"]}>
+            <label htmlFor="Name">Name</label>
+            <InputFieldComponent placeholder='Full Name' setValue={setS} />
+            <br />
+            <label htmlFor="Email">Email</label>
+            <InputFieldComponent placeholder='email@mail.com' setValue={setS} />
+            <br />
+            <label htmlFor="Phone">Phone</label>
+            <InputFieldComponent placeholder='000-000-0000' setValue={setS} />
+            <br />
+            <label htmlFor="Comment">Comment</label><br />
+            <textarea placeholder='Add your message here...'></textarea>
+          </div>
+        </div>
+      </section>
+
+      <section className={LandingPageStyles['brands']}>
+        <img src={tesla} alt="Fiat" />
+        <img src={audi} alt="Audi" />
+        <img src={fiat} alt="Fiat" />
+        <img src={hyundai} alt="Hyundai" />
+        <img src={peugeot} alt="Peugeot" />
+        <img src={volvo} alt="Volvo" />
+      </section>
+
     </div>
   )
 }

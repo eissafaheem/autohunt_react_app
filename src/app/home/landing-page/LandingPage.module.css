@@ -41,7 +41,7 @@ h1 {
     grid-gap: 1rem;
 }
 
-.search-dialog>div{
+.search-dialog>div {
     width: 100%;
 }
 
@@ -65,7 +65,7 @@ h1 {
     justify-content: space-between;
 }
 
-.header .see-more{
+.header .see-more {
     color: var(--text2_color);
     display: flex;
     align-items: center;
@@ -99,7 +99,7 @@ h1 {
     border-radius: 50%;
     padding: 3rem;
     aspect-ratio: 1;
-    border: var(--border_width) solid  var(--bg3_color);
+    border: var(--border_width) solid var(--bg3_color);
 }
 
 .btn-container {
@@ -137,56 +137,56 @@ h1 {
     }
 }
 
-.about-us{
+.about-us {
     background-color: var(--bg2_color);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--text1_color);
-    gap:1rem;
+    gap: 1rem;
     padding: 1rem;
 }
 
-.about-us>.info{
+.about-us>.info {
     margin: 1rem;
     width: 50%;
 }
 
-.about-us>.info>table{
+.about-us>.info>table {
     width: 100%;
     margin-top: 1rem;
 }
 
-.about-us .car-image{
+.about-us .car-image {
     width: 50%;
-    
+
 }
-.about-us .car-image img{
+
+.about-us .car-image img {
     width: 100%;
 }
 
-.our-services{
+.our-services {
     background-color: var(--bg1_color);
     color: var(--text1_color);
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10rem 0;
 }
 
-.service{
-    margin-top: 2rem;
+.service {
     width: 80%;
 }
 
-.service-card-container{
+.service-card-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
     margin-top: 1rem;
 }
 
-.service-card{
+.service-card {
     border: var(--border_width) solid var(--text2_color);
     display: flex;
     align-items: center;
@@ -195,40 +195,95 @@ h1 {
     aspect-ratio: 2;
 }
 
-.our-services .service{
 
-}
-
-.testimonials{
-    background-color: red;
+.testimonials {
     width: 100%;
 }
 
-.testimonial-container{
+.testimonial-heading {
+    margin-top: 5rem;
+}
+
+.testimonial-container {
     overflow: auto;
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
 
-.testimonial-card{
+.testimonial-card {
     width: 50%;
-    background-color: yellow;
     flex-shrink: 0;
 }
 
-.triangle{
+.testimonial-card h4 {
+    color: var(--text2_color);
+}
+
+.triangle {
     border-bottom: 2rem solid var(--bg3_color);
     /* border-top: 2rem solid transparent; */
     border-left: 2rem solid transparent;
     border-right: 2rem solid transparent;
     height: 0;
     width: 0;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
-.card-content{
+.testimonial-card img {
+    margin: 1rem;
+    width: 50%;
+}
+
+.testimonial-card .card-body {
     background-color: var(--bg3_color);
+    display: flex;
+    flex-direction: row;
+}
+
+.testimonial-card .content {
+    margin: 1rem;
+}
+
+.testimonial-container::-webkit-scrollbar {
+    display: none;
+}
+
+.contact {
+    background: url('./../../assets/svgs/car-bg2.svg');
+    color: var(--text1_color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5rem;
+}
+
+.contact .contact-map {
+    height: 80%;
+    width: 35%;
+    background-color: green;
+}
+
+.contact .contact-container {
+    width: 35%;
+}
+
+.contact .contact-container textarea{
+    box-sizing: border-box;
+    background-color: var(--bg3_color);
+    width: 100%;
+    height: 5rem;
+    color: var(--text1_color);
+    outline: none;
+    font-size: 1rem;
+    padding-left: 2rem;
+}
+
+.brands{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: var(--bg2_color);
+    padding: 1rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -260,6 +315,18 @@ h1 {
         grid-gap: 1rem;
         margin-top: 1rem;
     }
+
+}
+
+@media screen and (max-width: 950px) {
+    .testimonial-card .card-body {
+        flex-direction: column;
+    }
+
+    .testimonial-card img {
+        width: unset;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -278,23 +345,42 @@ h1 {
         margin-top: 1rem;
     }
 
-    .about-us{
+    .about-us {
         flex-direction: column;
         padding: 0;
     }
 
-    .about-us .info{
+    .about-us .info {
         width: unset;
     }
-    .about-us .car-image{
+
+    .about-us .car-image {
         width: unset;
     }
-    
-    .about-us img{
+
+    .about-us img {
         object-fit: contain;
     }
 
-    .service-card-container{
+    .our-services{
+        padding: 5rem 0;
+    }
+
+    .service-card-container {
         grid-template-columns: 1fr;
+    }
+
+    .contact {
+        flex-direction: column;
+        padding: 1rem;
+        display: block;
+    }
+
+    .contact .contact-map {
+        width: unset;
+    }
+
+    .contact .contact-container {
+        width: unset;
     }
 }
