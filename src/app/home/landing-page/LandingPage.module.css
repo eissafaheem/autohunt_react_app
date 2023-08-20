@@ -268,7 +268,7 @@ h1 {
     width: 35%;
 }
 
-.contact .contact-container textarea{
+.contact .contact-container textarea {
     box-sizing: border-box;
     background-color: var(--bg3_color);
     width: 100%;
@@ -279,7 +279,7 @@ h1 {
     padding-left: 2rem;
 }
 
-.brands{
+.brands {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     background-color: var(--bg2_color);
@@ -327,6 +327,10 @@ h1 {
         width: unset;
     }
 
+    .brands {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -362,7 +366,7 @@ h1 {
         object-fit: contain;
     }
 
-    .our-services{
+    .our-services {
         padding: 5rem 0;
     }
 
@@ -382,5 +386,10 @@ h1 {
 
     .contact .contact-container {
         width: unset;
+    }
+
+    
+    .brands {
+        grid-template-columns: 1fr 1fr;
     }
 }

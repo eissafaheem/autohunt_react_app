@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useMemo, useState } from 'react'
 import LandingPageStyles from './LandingPage.module.css'
 import CardComponent from '../../_shared/components/card/Card.component'
 import carImage from './../../assets/svgs/cars/Tesla.svg'
@@ -99,8 +99,8 @@ function LandingPageComponent() {
                   <p>Vehicle in stoack</p>
                 </td>
                 <td>
-                  <h1>150</h1>
-                  <p>Vehicle in stoack</p>
+                  <h1>40</h1>
+                  <p>Sold car</p>
                 </td>
               </tr>
               <tr>
@@ -214,7 +214,7 @@ function LandingPageComponent() {
 
       <section className={LandingPageStyles['contact']}>
         <div className={LandingPageStyles["contact-map"]}>
-          k
+          
         </div>
         <div className={LandingPageStyles["contact-container"]}>
           <h2>Contact</h2>
@@ -231,6 +231,9 @@ function LandingPageComponent() {
             <br />
             <label htmlFor="Comment">Comment</label><br />
             <textarea placeholder='Add your message here...'></textarea>
+            <br />
+            <br />
+            <ButtonComponent text='Send' onClick={()=>{}} type='primary'/>
           </div>
         </div>
       </section>
