@@ -1,13 +1,22 @@
 import React from 'react'
 import CardComponent from '../../_shared/components/card/Card.component'
 import carImage from './../../assets/svgs/cars/Tesla.svg'
+import FooterStyles from './Filter.module.css'
 
 function FilterComponent() {
   return (
-    <div>
-      Filter
-      <div style={{ width: "25rem", margin: "5rem" }}>
-        <CardComponent carImage={carImage} fueltype='Electric' isNew={true} location='Florida, USA' name='Tesla Model 3 Standard Range Plus' numberOfSeats='5' price='$56,690' rating={4} reviews={5} wheelDrive='Rear-wheel Drive' year='2020' />
+    <div className={FooterStyles['main-container']}>
+      <div className={FooterStyles["header"]}>
+        <h1>Search Result</h1>
+        <p>Homepage-Search-Search Result</p>
+      </div>
+      <div className={FooterStyles["content"]}>
+        <div className={FooterStyles["filter"]}>
+        Filter
+        </div>
+        <div className={FooterStyles["result"]}>
+        Card
+        </div>
       </div>
     </div>
   )

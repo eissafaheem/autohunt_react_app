@@ -1,0 +1,21 @@
+.main-container {}
+
+.header {
+    background-color: var(--bg2_color);
+    color: var(--text1_color);
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    padding-left: 4rem;
+    padding-right: 1rem;
+}
+
+.content {
+    color: var(--text1_color);
+    background-color: var(--bg1_color);
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+}
+
+.content .filter {}
+
+.content .result {}
