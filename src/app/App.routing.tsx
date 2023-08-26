@@ -10,6 +10,7 @@ import InfoComponent from "./home/info/Info.component";
 import SellComponent from "./home/sell/Sell.component";
 import CompareComponent from "./home/compare/Compare.component";
 import { ROUTES } from "./_shared/utils/Routes";
+import CarViwerComponent from "./home/car-viwer/CarInfo.component";
 
 function AppRouter() {
     const router = createBrowserRouter([
@@ -36,6 +37,10 @@ function AppRouter() {
                 {
                     path: `${ROUTES.compare}`,
                     element: <CompareComponent/>
+                },
+                {
+                    path: `${ROUTES.car_info}`,
+                    element: <CarViwerComponent/>
                 }
             ]
         }

@@ -282,7 +282,7 @@ h1 {
 .brands {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    background-color: var(--bg2_color);
+    background-color: var(--bg1_color);
     padding: 1rem;
 }
 

@@ -7,8 +7,10 @@ import calenderIcon from './../../../assets/svgs/calender-icon.svg'
 import fuelIcon from './../../../assets/svgs/fuel-icon.svg'
 import peopleIcon from './../../../assets/svgs/two-people-icon.svg'
 import steeringIcon from './../../../assets/svgs/steering-icon.svg'
+import { useNavigate } from 'react-router-dom'
+import { ROUTES } from '../../utils/Routes'
 
-export type CardComponentProps = {
+export type CarProps = {
     carImage: string
     isNew: boolean
     name: string,
@@ -22,7 +24,7 @@ export type CardComponentProps = {
     reviews: number
 }
 
-function CardComponent(props: CardComponentProps) {
+function CardComponent(props: CarProps) {
 
     const {
         carImage,
@@ -38,8 +40,13 @@ function CardComponent(props: CardComponentProps) {
         year
     } = props;
 
+    const navigate = useNavigate();
+    function onCardClick(){
+        navigate(ROUTES.car_info, {state:{props}});
+    }
+
     return (
-        <div className={CardStyles['main-container']}>
+        <div className={CardStyles['main-container']} onClick={onCardClick}>
             <div className={CardStyles["header"]}>
                 <div className={CardStyles["featured-ribbon"]}>
                     <img src={cornerRibbon} alt="Featured" />

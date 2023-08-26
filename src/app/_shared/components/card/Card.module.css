@@ -5,6 +5,7 @@
     position: relative;
     padding: 1rem;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 .featured-ribbon {

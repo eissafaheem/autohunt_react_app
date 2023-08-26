@@ -4,4 +4,5 @@ export const ROUTES = {
     info: "info",
     sell: "sell",
     compare: "compare",
+    car_info: "car_info",
 }
