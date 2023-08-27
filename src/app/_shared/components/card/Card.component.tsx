@@ -7,25 +7,18 @@ import calenderIcon from './../../../assets/svgs/calender-icon.svg'
 import fuelIcon from './../../../assets/svgs/fuel-icon.svg'
 import peopleIcon from './../../../assets/svgs/two-people-icon.svg'
 import steeringIcon from './../../../assets/svgs/steering-icon.svg'
+import carPlaceholder from './../../../assets/svgs/cars/Tesla.svg'
 import { useNavigate } from 'react-router-dom'
 import { ROUTES } from '../../utils/Routes'
+import { Car } from '../../../client/classes/Car'
 
 export type CarProps = {
-    carImage: string
-    isNew: boolean
-    name: string,
-    price: string,
-    location: string,
-    year: string,
-    wheelDrive: string,
-    fueltype: string,
-    numberOfSeats: string,
-    rating: number,
-    reviews: number
+    car: Car
 }
 
 function CardComponent(props: CarProps) {
 
+    const car = props.car;
     const {
         carImage,
         fueltype,
@@ -38,11 +31,12 @@ function CardComponent(props: CarProps) {
         reviews,
         wheelDrive,
         year
-    } = props;
+    } = car || {};
 
     const navigate = useNavigate();
     function onCardClick(){
-        navigate(ROUTES.car_info, {state:{props}});
+        console.log(car);
+        navigate(`/${ROUTES.car_info}`, {state:{car}} );
     }
 
     return (
@@ -52,7 +46,7 @@ function CardComponent(props: CarProps) {
                     <img src={cornerRibbon} alt="Featured" />
                 </div>
                 <div className={CardStyles["car-image"]}>
-                    <img src={carImage} alt="Car Image" />
+                    <img src={carImage || carPlaceholder} alt="Car Image" />
                 </div>
                 <div className={CardStyles["tag"]}>
                     {
@@ -97,16 +91,16 @@ function CardComponent(props: CarProps) {
             <hr />
             <div className={CardStyles["footer"]}>
                 {
-                    Array.from({ length: rating }, (_, index) => (
+                    Array.from({ length: Math.floor((rating || 0)) }, (_, index) => (
                         <span className="stars" key={index}>
                             <img src={filledStar} alt="Filled Star" />
                         </span>
                     ))
                 }
                 {
-                    rating < 5
+                    (rating || 0) < 5
                     &&
-                    Array.from({ length: (5 - rating) }, (_, index) => (
+                    Array.from({ length: (5 - Math.floor((rating || 0))) }, (_, index) => (
                         <span className="stars" key={index}>
                             <img src={unFilledStar} alt="Filled Star" />
                         </span>

@@ -22,12 +22,12 @@ function CarViwerComponent() {
     reviews,
     wheelDrive,
     year
-  } = Location.state.props;
+  } = Location.state.car;
 
-  useEffect(()=>{
-    window.scrollTo(0,0);
+  useEffect(() => {
+    window.scrollTo(0, 0);
 
-  },[])
+  }, [])
 
   return (
     <div>
@@ -36,8 +36,52 @@ function CarViwerComponent() {
         <p>Homepage - Car Details</p>
       </div>
       <div className={CarInfoStyles["content"]}>
-
         <div className={CarInfoStyles["details"]}>
+          <div className={CarInfoStyles["core-info"]}>
+            <div className={CarInfoStyles["car-image"]}>
+              <img src={carImage} alt="" />
+            </div>
+            <div className={CarInfoStyles["core-details"]}>
+              <h2>Details</h2>
+              <table>
+                <thead></thead>
+                <tbody>
+                  <tr>
+                    <td>Fuel Type</td>
+                    <td>{fueltype}</td>
+                  </tr>
+                  <tr>
+                    <td>New</td>
+                    <td>{isNew ? "Yes" : "No"}</td>
+                  </tr>
+                  <tr>
+                    <td>No of seats</td>
+                    <td>{numberOfSeats}</td>
+                  </tr>
+                  <tr>
+                    <td>Wheel Drive</td>
+                    <td>{wheelDrive}</td>
+                  </tr>
+                  <tr>
+                    <td>Year</td>
+                    <td>{year}</td>
+                  </tr>
+                  <tr>
+                    <td>Location</td>
+                    <td>{location}</td>
+                  </tr>
+                  {/* <tr>
+                    <td>Rating</td>
+                    <td>{rating}</td>
+                  </tr>
+                  <tr>
+                    <td>Price</td>
+                    <td>{price}</td>
+                  </tr> */}
+                </tbody>
+              </table>
+            </div>
+          </div>
           <div className={CarInfoStyles["owner-container"]}>
 
             <div className={CarInfoStyles["description"]}>
@@ -95,55 +139,6 @@ function CarViwerComponent() {
                 {price}
               </div>
             </div>
-          </div>
-
-          <div className={CarInfoStyles["core-info"]}>
-            <div className={CarInfoStyles["car-image"]}>
-              <img src={carImage} alt="" />
-            </div>
-
-            <div className={CarInfoStyles["core-details"]}>
-              <h2>Details</h2>
-              <table>
-                <thead></thead>
-                <tbody>
-                  <tr>
-                    <td>Fuel Type</td>
-                    <td>{fueltype}</td>
-                  </tr>
-                  <tr>
-                    <td>New</td>
-                    <td>{isNew ? "Yes" : "No"}</td>
-                  </tr>
-                  <tr>
-                    <td>No of seats</td>
-                    <td>{numberOfSeats}</td>
-                  </tr>
-                  <tr>
-                    <td>Wheel Drive</td>
-                    <td>{wheelDrive}</td>
-                  </tr>
-                  <tr>
-                    <td>Year</td>
-                    <td>{year}</td>
-                  </tr>
-                  <tr>
-                    <td>Location</td>
-                    <td>{location}</td>
-                  </tr>
-                  {/* <tr>
-                    <td>Rating</td>
-                    <td>{rating}</td>
-                  </tr>
-                  <tr>
-                    <td>Price</td>
-                    <td>{price}</td>
-                  </tr> */}
-                </tbody>
-              </table>
-
-            </div>
-
           </div>
         </div>
       </div>

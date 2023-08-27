@@ -1,4 +1,3 @@
-import React, { useMemo, useState } from 'react'
 import LandingPageStyles from './LandingPage.module.css'
 import CardComponent from '../../_shared/components/card/Card.component'
 import carImage from './../../assets/svgs/cars/Tesla.svg'
@@ -18,12 +17,16 @@ import tesla from './../../assets/svgs/car-logo/tesla.svg'
 import volvo from './../../assets/svgs/car-logo/volvo.svg'
 import hyundai from './../../assets/svgs/car-logo/hyundai.svg'
 import InputFieldComponent from '../../_shared/components/input-field/InputField.component'
+import { useLandingPageHook } from './LandingPage.hook'
 
 function LandingPageComponent() {
 
-  const [s, setS] = useState<string>("");
-
-
+  const {
+    setS,
+    handleCompareClick,
+    recomendedCars,
+    compareCars
+  } = useLandingPageHook();
 
   return (
     <div className={LandingPageStyles["main-container"]}>
@@ -53,15 +56,15 @@ function LandingPageComponent() {
             </div>
           </div>
           <div className={LandingPageStyles["card-container"]}>
-            <div className={LandingPageStyles["card-item"]}>
-              <CardComponent carImage={carImage} fueltype='Electric' isNew={true} location='Florida, USA' name='Tesla Model 3 Standard Range Plus' numberOfSeats='5' price='$56,690' rating={4} reviews={5} wheelDrive='Rear-wheel Drive' year='2020' />
-            </div>
-            <div className={LandingPageStyles["card-item"]}>
-              <CardComponent carImage={carImage} fueltype='Electric' isNew={true} location='Florida, USA' name='Tesla Model 3 Standard Range Plus' numberOfSeats='5' price='$56,690' rating={4} reviews={5} wheelDrive='Rear-wheel Drive' year='2020' />
-            </div>
-            <div className={LandingPageStyles["card-item"]}>
-              <CardComponent carImage={carImage} fueltype='Electric' isNew={true} location='Florida, USA' name='Tesla Model 3 Standard Range Plus' numberOfSeats='5' price='$56,690' rating={4} reviews={5} wheelDrive='Rear-wheel Drive' year='2020' />
-            </div>
+
+            {
+              recomendedCars.map((car, index) => {
+                return <div className={LandingPageStyles["card-item"]}>
+                  <CardComponent car={car} />
+                </div>
+              })
+            }
+
           </div>
         </div>
       </section>
@@ -71,17 +74,17 @@ function LandingPageComponent() {
           <h2>Compare Cars</h2>
           <div className={LandingPageStyles["versus-container"]}>
             <div className={LandingPageStyles["card-item"]}>
-              <CardComponent carImage={carImage} fueltype='Electric' isNew={true} location='Florida, USA' name='Tesla Model 3 Standard Range Plus' numberOfSeats='5' price='$56,690' rating={4} reviews={5} wheelDrive='Rear-wheel Drive' year='2020' />
+              <CardComponent car={compareCars[0]} />
             </div>
             <div className={LandingPageStyles["versus"]}>
               <h1>VS</h1>
             </div>
             <div className={LandingPageStyles["card-item"]}>
-              <CardComponent carImage={carImage} fueltype='Electric' isNew={true} location='Florida, USA' name='Tesla Model 3 Standard Range Plus' numberOfSeats='5' price='$56,690' rating={4} reviews={5} wheelDrive='Rear-wheel Drive' year='2020' />
+              <CardComponent car={compareCars[1]} />
             </div>
           </div>
           <div className={LandingPageStyles['btn-container']}>
-            <ButtonComponent text='Compare' type='secondary' onClick={() => { console.log("ok") }} />
+            <ButtonComponent text='Compare' type='secondary' onClick={() => { handleCompareClick() }} />
           </div>
         </div>
       </section>
@@ -214,7 +217,7 @@ function LandingPageComponent() {
 
       <section className={LandingPageStyles['contact']}>
         <div className={LandingPageStyles["contact-map"]}>
-          
+
         </div>
         <div className={LandingPageStyles["contact-container"]}>
           <h2>Contact</h2>
@@ -233,7 +236,7 @@ function LandingPageComponent() {
             <textarea placeholder='Add your message here...'></textarea>
             <br />
             <br />
-            <ButtonComponent text='Send' onClick={()=>{}} type='primary'/>
+            <ButtonComponent text='Send' onClick={() => { }} type='primary' />
           </div>
         </div>
       </section>

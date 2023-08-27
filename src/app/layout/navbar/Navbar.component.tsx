@@ -38,11 +38,11 @@ function NavbarComponent() {
                         Compare
                     </Link>
                 </div>
-                <div className={NavbarStyles["option"]}>
+                {/* <div className={NavbarStyles["option"]}>
                     <Link to={ROUTES.sell} className={NavbarStyles['nav-text']}>
                         Sell
                     </Link>
-                </div>
+                </div> */}
                 <div className={NavbarStyles["option"]}>
                     <img src={UserIcon} alt="User Icon" />
                     <Link to={ROUTES.sell} className={NavbarStyles['nav-text']}>

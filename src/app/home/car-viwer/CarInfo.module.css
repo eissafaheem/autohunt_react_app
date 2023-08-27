@@ -16,20 +16,27 @@
 .details {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 3rem
+    grid-gap: 3rem;
+    grid-auto-flow: dense;
+  direction: rtl;
 }
 
 .owner-container {
     display: flex;
     flex-direction: column;
     gap: 3.1rem;
+  direction: ltr;
+  
 }
 
 .owner-container h2 {
     margin-bottom: 1rem;
 }
 
-.core-info {}
+.core-info {
+    direction: ltr;
+
+}
 
 .features {}
 
