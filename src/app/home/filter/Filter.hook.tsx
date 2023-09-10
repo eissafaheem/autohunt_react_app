@@ -5,7 +5,8 @@ import { CarManagementService } from "../../client/services/car-management.servi
 export const useFilterHook = () =>{
 
     const [carResults, setCarResults] = useState<Car[]>([]);
-
+    const [searchInput, setSearchInput] = useState<string>("");
+    
     useEffect(()=>{
         getFilteredCars();
     },[])
@@ -18,6 +19,8 @@ export const useFilterHook = () =>{
     }
 
     return {
-        carResults
+        carResults,
+        setSearchInput,
+        searchInput
     };
 }

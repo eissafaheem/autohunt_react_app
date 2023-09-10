@@ -6,6 +6,13 @@
     padding: 1rem;
     border-radius: 3px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.main-container:hover{
+    box-shadow: 10px 10px 10px var(--bg3_color);
+    transform: scale(1.02);
 }
 
 .featured-ribbon {

@@ -56,7 +56,11 @@ h1 {
 
 .compare-container,
 .recomended-container {
-    margin: 5rem;
+    margin-top: 3rem;
+}
+
+.compare-container{
+    margin-bottom: 3rem;
 }
 
 .recomended-container>.header {
@@ -71,6 +75,7 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 1ch;
+    cursor: pointer;
 }
 
 
@@ -88,11 +93,14 @@ h1 {
     margin-top: 1rem;
 }
 
+
 .versus {
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: pulse 2s infinite;
 }
+
 
 .versus>h1 {
     background-color: var(--text2_color);
@@ -103,9 +111,17 @@ h1 {
 }
 
 .btn-container {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+}
 
 @media screen and (max-width: 800px) {
     .welcome {
@@ -306,6 +322,7 @@ h1 {
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1;
+        animation: none;
     }
 
     .versus-container,

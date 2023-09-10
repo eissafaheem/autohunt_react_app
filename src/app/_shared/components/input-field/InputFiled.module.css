@@ -8,7 +8,7 @@
 
 .icon {}
 
-input {
+.main-container input {
     background-color: var(--bg3_color);
     outline: none;
     width: 100%;

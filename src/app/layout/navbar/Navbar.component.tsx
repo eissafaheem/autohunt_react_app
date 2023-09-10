@@ -24,6 +24,11 @@ function NavbarComponent() {
             </div>
             <div className={`${NavbarStyles["options"]} ${isMenuOpen && NavbarStyles['options-visible']}`}>
                 <div className={NavbarStyles["option"]}>
+                    <Link to={ROUTES.landing_page} className={NavbarStyles['nav-text']}>
+                        Home
+                    </Link>
+                </div>
+                <div className={NavbarStyles["option"]}>
                     <Link to={ROUTES.filter} className={NavbarStyles['nav-text']}>
                         New Cars
                     </Link>
@@ -43,7 +48,7 @@ function NavbarComponent() {
                         Sell
                     </Link>
                 </div> */}
-                <div className={NavbarStyles["option"]}>
+                {/* <div className={NavbarStyles["option"]}>
                     <img src={UserIcon} alt="User Icon" />
                     <Link to={ROUTES.sell} className={NavbarStyles['nav-text']}>
                         Sign In
@@ -54,7 +59,7 @@ function NavbarComponent() {
                     <Link to={ROUTES.sell} className={NavbarStyles['nav-text']}>
                         En
                     </Link>
-                </div>
+                </div> */}
             </div>
         </div>
     )

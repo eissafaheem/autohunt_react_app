@@ -8,6 +8,8 @@ export const useCompareHook = () =>{
     const Location = useLocation();
     const [car1, setCar1] = useState<Car>(new Car());
     const [car2, setCar2] = useState<Car>( new Car());
+    const [value, setValue] = useState<string>("");
+    
     
     useEffect(()=>{
 
@@ -30,5 +32,6 @@ export const useCompareHook = () =>{
     return {
         car1,
         car2,
+        setValue
     };
 }

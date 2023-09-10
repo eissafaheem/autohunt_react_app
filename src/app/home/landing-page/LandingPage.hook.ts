@@ -22,6 +22,10 @@ export const useLandingPageHook = () => {
         navigate(ROUTES.compare, {state:{car1: compareCars[0], car2: compareCars[1]}})
     }
 
+    function routeToFilter() {
+        navigate(ROUTES.filter)
+    }
+
     function getRecomandedCars() {
         const carsRes = carManagementService.getRecomendedCars();
         setRecomendedCars(carsRes);
@@ -36,6 +40,7 @@ export const useLandingPageHook = () => {
         setS,
         handleCompareClick,
         recomendedCars,
-        compareCars
+        compareCars,
+        routeToFilter
     };
 }

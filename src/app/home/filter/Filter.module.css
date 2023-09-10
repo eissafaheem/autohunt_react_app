@@ -16,11 +16,41 @@
     grid-template-columns: 0.5fr 1.5fr;
     padding: 4rem;
     grid-gap: 2rem;
-    position: relative;
 }
 
 .filter{
+    /* padding: 1rem; */
+}
+
+.flter-fields{
     background-color: var(--bg2_color);
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: var(--border_radius);
+}
+
+.filter .input .range{
+    width: 100%;
+    margin: 0.5rem 0;
+}
+.filter .input{
+    margin: 1rem;
+}
+
+.filter .radio-input{
+    display: flex;
+    justify-content: space-around;
+}
+
+.filter .input .radio{
+    display: flex;
+    gap: 1rem;
+}
+
+.filter h2{
+    margin: 1rem;
+    margin-top: 0;
+    /* border-bottom: var(--border_width) solid var(--text1_color); */
 }
 
 .result{
@@ -51,8 +81,6 @@
     }
 
     .filter{
-        position: absolute;
-        top: 0;
-        left: 0;
+       
     }
 }

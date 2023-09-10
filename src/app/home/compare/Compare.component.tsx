@@ -9,7 +9,8 @@ function CompareComponent() {
 
   const {
     car1,
-    car2
+    car2,
+    setValue
   } = useCompareHook();
 
   return (
@@ -24,10 +25,10 @@ function CompareComponent() {
             <tr>
               <td></td>
               <td>
-                <InputDropdownComponent/>
+                <InputDropdownComponent initialValue='Hii' values={[]} setValue={setValue}/>
               </td>
               <td>
-                <InputDropdownComponent/>
+                <InputDropdownComponent initialValue='Hii' values={[]} setValue={setValue}/>
               </td>
             </tr>
             <tr>

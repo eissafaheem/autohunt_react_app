@@ -25,7 +25,8 @@ function LandingPageComponent() {
     setS,
     handleCompareClick,
     recomendedCars,
-    compareCars
+    compareCars,
+    routeToFilter
   } = useLandingPageHook();
 
   return (
@@ -42,7 +43,7 @@ function LandingPageComponent() {
           <div><InputFieldComponent placeholder='Brand' icon={searchIcon} setValue={setS} /></div>
           <div><InputFieldComponent placeholder='Location' icon={locationIcon} setValue={setS} /></div>
           <div><InputFieldComponent placeholder='Price Range' icon={locationIcon} setValue={setS} /></div>
-          <div><ButtonComponent onClick={() => { }} text='Search' type='primary' /></div>
+          <div><ButtonComponent onClick={() => {routeToFilter()}} text='Search' type='primary'/></div>
         </div>
       </section>
 
@@ -50,7 +51,7 @@ function LandingPageComponent() {
         <div className={LandingPageStyles["recomended-container"]}>
           <div className={LandingPageStyles["header"]}>
             <h2>Recomended Cars</h2>
-            <div className={LandingPageStyles['see-more']}>
+            <div className={LandingPageStyles['see-more']} onClick={()=>{routeToFilter()}}>
               See more
               <img src={rightArrow} alt="Right Arrow" />
             </div>
@@ -59,7 +60,7 @@ function LandingPageComponent() {
 
             {
               recomendedCars.map((car, index) => {
-                return <div className={LandingPageStyles["card-item"]}>
+                return <div key={index} className={LandingPageStyles["card-item"]}>
                   <CardComponent car={car} />
                 </div>
               })
