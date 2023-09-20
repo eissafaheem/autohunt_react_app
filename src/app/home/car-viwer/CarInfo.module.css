@@ -1,0 +1,165 @@
+.header {
+    background-color: var(--bg2_color);
+    color: var(--text1_color);
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    padding-left: 4rem;
+    padding-right: 1rem;
+}
+
+.content {
+    padding: 4rem;
+    background-color: var(--bg1_color);
+    color: var(--text1_color);
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    grid-auto-flow: dense;
+  direction: rtl;
+}
+
+.owner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.1rem;
+  direction: ltr;
+  
+}
+
+.owner-container h2 {
+    margin-bottom: 1rem;
+}
+
+.core-info {
+    direction: ltr;
+
+}
+
+.features {}
+
+.features span {
+    background-color: var(--bg3_color);
+    padding: 0.5rem 0.5rem;
+    line-height: 2.5rem;
+    margin-right: 0.5rem;
+    border-radius: var(--border_radius);
+}
+
+.dealer-info .info {
+    background-color: var(--bg2_color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.dealer-info .owner {
+    display: flex;
+    gap: 1rem;
+}
+
+.dealer-info .owner .name {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.price-rating .price {
+    font-size: xx-large;
+    padding: 0.5rem 1rem;
+    border: var(--border_width) solid var(--text2_color);
+    color: var(--text2_color);
+    text-align: center;
+
+}
+
+.price-rating .rating {
+    text-align: center;
+}
+
+.price-rating .rating img {
+    height: 3rem;
+}
+
+.dealer-info .contact {
+    padding: 1rem;
+    border-left: 1px solid var(--text1_color);
+}
+
+.car-image img {
+    width: 100%;
+    object-fit: cover;
+    height: 20rem;
+    border-radius: var(--border_radius);
+}
+
+.core-details {
+    padding-top: 1rem;
+}
+
+.core-details h2 {
+    margin-bottom: 1rem;
+}
+
+.core-details table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.core-details td {
+    border-bottom: 1px dashed white;
+    padding: 1rem;
+}
+
+.core-details table tr:last-child {
+    background-color: var(--bg3_color);
+}
+
+.core-details table td:last-child {
+    text-align: right;
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .header h1{
+        font-size: 2rem;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    .details {
+        grid-template-columns: 1fr;
+    }
+
+    .dealer-info .info {
+        flex-direction: column;
+        padding: 0.5rem;
+        align-items: center;
+    }
+
+    .dealer-info .contact {
+        border-left: none;
+        padding: 1rem 0;
+        border: 1px solid white;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .car-image img {
+        width: 100%;
+        height: unset;
+    }
+}

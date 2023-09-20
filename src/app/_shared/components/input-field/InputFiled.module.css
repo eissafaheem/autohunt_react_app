@@ -1,0 +1,17 @@
+.main-container {
+    background-color: var(--bg3_color);
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border_radius);
+}
+
+.icon {}
+
+.main-container input {
+    background-color: var(--bg3_color);
+    outline: none;
+    width: 100%;
+    color: var(--text1_color);
+    font-size: 1rem;
+}

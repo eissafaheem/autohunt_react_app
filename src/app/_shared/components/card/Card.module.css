@@ -1,0 +1,71 @@
+.main-container {
+    background-color: #0A0D10;
+    color: white;
+    border: var(--border_width) solid var(--bg3_color);
+    position: relative;
+    padding: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.main-container:hover{
+    box-shadow: 10px 10px 10px var(--bg3_color);
+    transform: scale(1.02);
+}
+
+.featured-ribbon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.car-image>img {
+    width: 100%;
+}
+
+.tag {
+    padding: 0.2rem 0.5rem;
+    border: 2px solid #017CC6;
+    width: fit-content;
+    border-radius: 3px;
+    color: #017CC6;
+    margin: 0.5rem 0;
+}
+
+.content>* {
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.price {
+    color: #017CC6;
+}
+
+table img {
+    height: 1rem;
+    margin-right: 1ch;
+}
+
+table td:nth-child(1) {
+    width: 43%;
+}
+
+hr {
+    border-top: 1px solid white;
+    margin: 1rem 0;
+}
+
+.footer img {
+    height: 1rem;
+}
+
+.footer .reviws {
+    margin-left: 1ch;
+}

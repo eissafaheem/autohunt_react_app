@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  border: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root {
+
+  --bg1_color: #0B0C10;
+  --bg2_color: #071620;
+  --bg3_color: #152836;
+
+  --text1_color: #FFFFFF;
+  --text2_color: #007CC7;
+
+  --border_width: 2px;
+  --border_radius: 3px;
+}
+
+*::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: #0B0C10;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #017ac631;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 1000px) {
+  body{
+    font-size: 14px;
+  }
+}

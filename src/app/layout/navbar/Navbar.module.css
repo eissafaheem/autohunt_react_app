@@ -1,0 +1,87 @@
+.nav-main-container {
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.50);
+    z-index: 10;
+}
+
+.menu{
+    color: white;
+    float: right;
+    display: none;
+    padding: 0 1rem;
+}
+
+.menu>img{
+    height: 2rem;
+}
+
+.options {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+}
+
+.user-options>.option {
+    display: flex;
+    align-items: center;
+    gap: 1ch;
+    margin: 0 2rem;
+}
+
+.nav-text {
+    text-decoration: none;
+    color: white;
+}
+
+.option>img {
+    height: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-main-container {
+        flex-direction: column;
+        height: fit-content;
+        background-color: rgba(0, 0, 0, 0.9);
+
+    }
+    
+    .brand {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .brand-logo {
+        padding: 0 1rem;
+        float: left;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .options {
+        flex-direction: column;
+        display: none;
+    }
+
+    .options-visible{
+        display: flex;
+    }
+
+    .option {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}

@@ -3,21 +3,44 @@ import HomeComponent from "./home/Home.component";
 
 import React from 'react'
 import LayoutComponent from "./layout/Layout.component";
-import InputFieldComponent from "./shared/components/InputField.component";
+import InputFieldComponent from "./_shared/components/input-field/InputField.component";
+import LandingPageComponent from "./home/landing-page/LandingPage.component";
+import FilterComponent from "./home/filter/Filter.component";
+import InfoComponent from "./home/info/Info.component";
+import SellComponent from "./home/sell/Sell.component";
+import CompareComponent from "./home/compare/Compare.component";
+import { ROUTES } from "./_shared/utils/Routes";
+import CarViwerComponent from "./home/car-viwer/CarInfo.component";
 
 function AppRouter() {
     const router = createBrowserRouter([
         {
             path: '/',
-            element: <HomeComponent />,
+            element: <LayoutComponent/>,
             children: [
                 {
-                    path: '/layout',
-                    element: <LayoutComponent />
+                    path: `${ROUTES.landing_page}`,
+                    element: <LandingPageComponent/>
                 },
                 {
-                    path: '/input',
-                    element: <InputFieldComponent/>
+                    path: `${ROUTES.filter}`,
+                    element: <FilterComponent/>
+                },
+                {
+                    path: `${ROUTES.info}`,
+                    element: <InfoComponent/>
+                },
+                {
+                    path: `${ROUTES.sell}`,
+                    element: <SellComponent/>
+                },
+                {
+                    path: `${ROUTES.compare}`,
+                    element: <CompareComponent/>
+                },
+                {
+                    path: `${ROUTES.car_info}`,
+                    element: <CarViwerComponent/>
                 }
             ]
         }
@@ -31,7 +54,7 @@ export default AppRouter
 
 // 1. Create browser router
 // 2. Add all urls and elements you want to show init
-// 3. export RouterProvider with router as params
+// 3. Return RouterProvider with router as params
 // 4. Import in App.tsx and call AppRouter
 // 5. you can add children parameter
 // 6. After that you should add outlet to place whrere those children needs to be replaced at.
