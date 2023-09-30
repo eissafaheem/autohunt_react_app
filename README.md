@@ -1,46 +1,21 @@
-# Getting Started with Create React App
+# Autohunt
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://github.com/eissafaheem/autohunt_react_app/assets/68000460/383e9fae-f884-4342-ab65-7c581f2540d6)
 
-## Available Scripts
+![image](https://github.com/eissafaheem/autohunt_react_app/assets/68000460/1d3f08bc-dece-4cba-bd16-0ef5e0446466)
 
-In the project directory, you can run:
+![image](https://github.com/eissafaheem/autohunt_react_app/assets/68000460/3bbfa912-e7dc-4338-a089-8f0dbe27239b)
 
-### `npm start`
+![image](https://github.com/eissafaheem/autohunt_react_app/assets/68000460/bb21f49a-c913-4f87-8343-89759c41cfae)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![image](https://github.com/eissafaheem/autohunt_react_app/assets/68000460/8ecc2778-6e60-4a83-8135-f2f7cff8b248)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![image](https://github.com/eissafaheem/autohunt_react_app/assets/68000460/d4eadf4d-5ce1-4e87-ade2-d61039d0af06)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](https://github.com/eissafaheem/autohunt_react_app/assets/68000460/965f494f-17b0-461b-b639-84dbbfd32ed2)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://github.com/eissafaheem/autohunt_react_app/assets/68000460/0a1c5a82-476e-4716-99e2-23a722f52c75)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+![image](https://github.com/eissafaheem/autohunt_react_app/assets/68000460/286d0020-d761-4d55-ac0f-1dfe5d94e000)
