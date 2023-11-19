@@ -268,20 +268,15 @@ h1 {
 .contact {
     background: url('./../../assets/svgs/car-bg2.svg');
     color: var(--text1_color);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     padding: 5rem;
 }
 
 .contact .contact-map {
-    height: 80%;
-    width: 35%;
-    background-color: green;
+   
 }
 
 .contact .contact-container {
-    width: 35%;
+    width: 50%;
 }
 
 .contact .contact-container textarea {
