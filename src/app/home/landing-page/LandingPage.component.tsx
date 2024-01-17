@@ -10,6 +10,11 @@ import newCarIcon from './../../assets/svgs/new-car-icon.svg'
 import usedCarIcon from './../../assets/svgs/used-car-icon.svg'
 import sellCarIcon from './../../assets/svgs/sell-car-icon.svg'
 import omar from './../../assets/svgs/persons/omar.svg'
+import person2 from './../../assets/svgs/persons/person2.jpg'
+import person3 from './../../assets/svgs/persons/person3.jpg'
+import person4 from './../../assets/svgs/persons/person4.avif'
+import person5 from './../../assets/svgs/persons/person5.jpg'
+import person6 from './../../assets/svgs/persons/person6.jpg'
 import audi from './../../assets/svgs/car-logo/audi.svg'
 import fiat from './../../assets/svgs/car-logo/fiat.svg'
 import peugeot from './../../assets/svgs/car-logo/peugeot.svg'
@@ -147,10 +152,23 @@ function LandingPageComponent() {
         </div>
         <div className={LandingPageStyles["testimonials"]}>
           <div className={LandingPageStyles["testimonial-container"]}>
-            <div className={LandingPageStyles["testimonial-card"]}>
+            {/* <div className={LandingPageStyles["testimonial-card"]}>
               <div className={LandingPageStyles["triangle"]} />
               <div className={LandingPageStyles["card-body"]}>
                 <img src={omar} alt="" />
+                <div className={LandingPageStyles["content"]}>
+                  <h4>Omar Mango</h4>
+                  <h4>Customer</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odit eos iusto. Non a, sit quisquam ab temporibus minima accusantium?
+                  </p>
+                </div>
+              </div>
+            </div> */}
+            <div className={LandingPageStyles["testimonial-card"]}>
+              <div className={LandingPageStyles["triangle"]} />
+              <div className={LandingPageStyles["card-body"]}>
+                <img src={person2} alt="" />
                 <div className={LandingPageStyles["content"]}>
                   <h4>Omar Mango</h4>
                   <h4>Customer</h4>
@@ -163,7 +181,7 @@ function LandingPageComponent() {
             <div className={LandingPageStyles["testimonial-card"]}>
               <div className={LandingPageStyles["triangle"]} />
               <div className={LandingPageStyles["card-body"]}>
-                <img src={omar} alt="" />
+                <img src={person3} alt="" />
                 <div className={LandingPageStyles["content"]}>
                   <h4>Omar Mango</h4>
                   <h4>Customer</h4>
@@ -176,7 +194,7 @@ function LandingPageComponent() {
             <div className={LandingPageStyles["testimonial-card"]}>
               <div className={LandingPageStyles["triangle"]} />
               <div className={LandingPageStyles["card-body"]}>
-                <img src={omar} alt="" />
+                <img src={person4} alt="" />
                 <div className={LandingPageStyles["content"]}>
                   <h4>Omar Mango</h4>
                   <h4>Customer</h4>
@@ -186,10 +204,10 @@ function LandingPageComponent() {
                 </div>
               </div>
             </div>
-            <div className={LandingPageStyles["testimonial-card"]}>
+            {/* <div className={LandingPageStyles["testimonial-card"]}>
               <div className={LandingPageStyles["triangle"]} />
               <div className={LandingPageStyles["card-body"]}>
-                <img src={omar} alt="" />
+                <img src={person6} alt="" />
                 <div className={LandingPageStyles["content"]}>
                   <h4>Omar Mango</h4>
                   <h4>Customer</h4>
@@ -198,20 +216,7 @@ function LandingPageComponent() {
                   </p>
                 </div>
               </div>
-            </div>
-            <div className={LandingPageStyles["testimonial-card"]}>
-              <div className={LandingPageStyles["triangle"]} />
-              <div className={LandingPageStyles["card-body"]}>
-                <img src={omar} alt="" />
-                <div className={LandingPageStyles["content"]}>
-                  <h4>Omar Mango</h4>
-                  <h4>Customer</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odit eos iusto. Non a, sit quisquam ab temporibus minima accusantium?
-                  </p>
-                </div>
-              </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

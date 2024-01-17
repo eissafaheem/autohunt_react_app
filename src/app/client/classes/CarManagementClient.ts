@@ -1,22 +1,22 @@
 import { Car } from "./Car";
 import car1 from './../../assets/svgs/cars/Tesla.svg';
-import car2 from './../../assets/svgs/cars/Tesla.svg';
-import car3 from './../../assets/svgs/cars/Tesla.svg';
-import car4 from './../../assets/svgs/cars/Tesla.svg';
-import car5 from './../../assets/svgs/cars/Tesla.svg';
-import car6 from './../../assets/svgs/cars/Tesla.svg';
+import car2 from './../../assets/svgs/cars/car2.svg';
+import car3 from './../../assets/svgs/cars/car3.svg';
+import car4 from './../../assets/svgs/cars/car4.svg';
+import car5 from './../../assets/svgs/cars/car5.png';
+import car6 from './../../assets/svgs/cars/car5.svg';
 import car7 from './../../assets/svgs/cars/Tesla.svg';
-import car8 from './../../assets/svgs/cars/Tesla.svg';
-import car9 from './../../assets/svgs/cars/Tesla.svg';
-import car10 from './../../assets/svgs/cars/Tesla.svg';
-import car11 from './../../assets/svgs/cars/Tesla.svg';
-import car12 from './../../assets/svgs/cars/Tesla.svg';
-import car13 from './../../assets/svgs/cars/Tesla.svg';
+import car8 from './../../assets/svgs/cars/car5.svg';
+import car9 from './../../assets/svgs/cars/car2.svg';
+import car10 from './../../assets/svgs/cars/car3.svg';
+import car11 from './../../assets/svgs/cars/car4.svg';
+import car12 from './../../assets/svgs/cars/car5.png';
+import car13 from './../../assets/svgs/cars/car5.svg';
 import car14 from './../../assets/svgs/cars/Tesla.svg';
-import car15 from './../../assets/svgs/cars/Tesla.svg';
-import car16 from './../../assets/svgs/cars/Tesla.svg';
-import car17 from './../../assets/svgs/cars/Tesla.svg';
-import car18 from './../../assets/svgs/cars/Tesla.svg';
+import car15 from './../../assets/svgs/cars/car2.svg';
+import car16 from './../../assets/svgs/cars/car3.svg';
+import car17 from './../../assets/svgs/cars/car4.svg';
+import car18 from './../../assets/svgs/cars/car5.png';
 
 
 export class CarManagementClient {

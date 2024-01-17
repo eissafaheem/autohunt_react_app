@@ -249,6 +249,8 @@ h1 {
 .testimonial-card img {
     margin: 1rem;
     width: 50%;
+    /* height: 15rem; */
+    object-fit: contain;
 }
 
 .testimonial-card .card-body {
@@ -337,6 +339,7 @@ h1 {
 
     .testimonial-card img {
         width: unset;
+        /* height: 10rem; */
     }
 
     .brands {
