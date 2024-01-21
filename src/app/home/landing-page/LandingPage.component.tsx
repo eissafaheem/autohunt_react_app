@@ -44,10 +44,10 @@ function LandingPageComponent() {
 
         <div className={LandingPageStyles["search-dialog"]}>
           <div><InputFieldComponent placeholder='Search' icon={searchIcon} setValue={setS} /></div>
-          <div><InputFieldComponent placeholder='Model' icon={searchIcon} setValue={setS} /></div>
-          <div><InputFieldComponent placeholder='Brand' icon={searchIcon} setValue={setS} /></div>
+          <div><InputFieldComponent placeholder='Model'  setValue={setS} /></div>
+          <div><InputFieldComponent placeholder='Brand'  setValue={setS} /></div>
           <div><InputFieldComponent placeholder='Location' icon={locationIcon} setValue={setS} /></div>
-          <div><InputFieldComponent placeholder='Price Range' icon={locationIcon} setValue={setS} /></div>
+          <div><InputFieldComponent placeholder='Price Range'  setValue={setS} /></div>
           <div><ButtonComponent onClick={() => {routeToFilter()}} text='Search' type='primary'/></div>
         </div>
       </section>
